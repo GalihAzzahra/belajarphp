@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Penyewaan</title>
+</head>
+<body>
+    <h2>Formulir Penyewaan</h2>
+    <form action="proses.php" method="POST">
+        <label for="alamat">Alamat:</label><br>
+        <input type="text" id="alamat" name="alamat" required><br><br>
+
+        <label for="nama">Nama:</label><br>
+        <input type="text" id="nama" name="nama" required><br><br>
+
+        <label for="NoKTP">No KTP:</label><br>
+        <input type="text" id="NoKTP" name="no_ktp" required><br><br>
+
+        <label for="NoTelp">No Telp:</label><br>
+        <input type="text" id="NoTelp" name="no_telp" required><br><br>
+
+        <label for="pilihan">Pilih Jenis Kendaraan:</label><br>
+        <select id="pilihan" name="jenis_kendaraan">
+            <option value="Alphard">Alphard</option>
+            <option value="Angkot">Angkot</option>
+            <option value="Aila">Aila</option>
+        </select><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
