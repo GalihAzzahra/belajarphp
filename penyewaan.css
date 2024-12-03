@@ -1,0 +1,102 @@
+/* Reset dasar */
+* {
+    box-sizing: border-box; /* Mengatur box-sizing untuk semua elemen */
+    margin: 0; /* Menghapus margin default */
+    padding: 0; /* Menghapus padding default */
+}
+
+/* Gaya untuk body */
+body {
+    font-family: 'Arial', sans-serif; /* Mengatur font */
+    background-color: #f0f8ff; /* Warna latar belakang yang lembut */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Tinggi penuh layar */
+    color: #333; /* Warna teks */
+    background-image: url(images/mbl.jpg)
+}
+
+/* Kontainer formulir */
+form {
+    width: 100%;
+    max-width: 500px; /* Batas maksimum lebar */
+    background-color: #ffffff; /* Warna latar belakang formulir */
+    padding: 30px; /* Padding dalam formulir */
+    border-radius: 10px; /* Sudut melengkung */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Bayangan ringan */
+    text-align: left; /* Teks rata kiri */
+}
+
+/* Judul formulir */
+h2 {
+    color: #4a90e2; /* Warna biru untuk judul */
+    margin-bottom: 20px; /* Jarak bawah judul */
+    font-size: 28px; /* Ukuran font judul */
+    text-align: center; /* Rata tengah untuk judul */
+}
+
+/* Label elemen */
+label {
+    display: block;
+    font-weight: bold; /* Menebalkan teks label */
+    margin-bottom: 5px; /* Jarak bawah label */
+}
+
+/* Input elemen */
+input[type="text"], input[type="date"], select {
+    width: 100%; /* Lebar penuh */
+    padding: 10px; /* Padding dalam input */
+    margin-bottom: 15px; /* Jarak bawah input */
+    border: 1px solid #ccc; /* Border abu-abu */
+    border-radius: 5px; /* Sudut melengkung */
+    font-size: 16px; /* Ukuran font */
+    outline: none; /* Hilangkan border default saat fokus */
+    transition: border-color 0.3s; /* Efek transisi untuk border */
+}
+
+input[type="text"]:focus, input[type="date"]:focus, select:focus {
+    border-color: #4a90e2; /* Warna border saat fokus */
+}
+
+/* Tombol */
+button {
+    width: calc(50% - 10px); /* Setengah lebar dengan margin */
+    padding: 10px; /* Padding dalam tombol */
+    font-size: 16px; /* Ukuran font */
+    font-weight: bold; /* Menebalkan teks tombol */
+    border: none; /* Menghilangkan border default */
+    border-radius: 5px; /* Sudut melengkung */
+    cursor: pointer; /* Mengubah kursor saat hover */
+    transition: background-color 0.3s ease; /* Efek transisi */
+    margin-right: 10px; /* Jarak antar tombol */
+}
+
+/* Tombol Submit */
+button[type="submit"] {
+    background-color: #4a90e2; /* Warna latar belakang tombol submit */
+    color: white; /* Warna teks tombol */
+}
+
+button[type="submit"]:hover {
+    background-color: #357ab7; /* Warna lebih gelap saat hover */
+}
+
+/* Tombol Reset */
+button[type="reset"] {
+    background-color: #f44336; /* Warna latar belakang tombol reset */
+    color: white; /* Warna teks tombol */
+}
+
+button[type="reset"]:hover {
+    background-color: #c93025; /* Warna lebih gelap saat hover */
+}
+
+/* Responsif untuk perangkat kecil */
+@media (max-width: 480px) {
+    button {
+        width: 100%; /* Tombol penuh pada layar kecil */
+        margin-bottom: 10px; /* Jarak antar tombol */
+        margin-right: 0; /* Menghilangkan margin kanan pada tombol */
+    }
+}

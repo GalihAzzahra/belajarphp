@@ -1,0 +1,91 @@
+/* General reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fde0f7;
+    display: flex; /* Center the container horizontally */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Make the body as tall as the viewport */
+    background-image: url(images/mbl.jpg);
+  }
+  
+  /* Login container */
+  .login-container {
+    width: 600px; /* Increased width */
+    padding: 40px;
+    background: #e5e8ea;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Form title */
+  h2 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+  
+  /* Labels */
+  label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+    color: #555;
+    text-align: left;
+  }
+  
+  /* Input fields */
+  input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #4a90e2;
+  }
+  
+  /* Buttons */
+  button {
+    width: 100%;
+    padding: 15px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #357ab7;
+  }
+  
+  /* Error messages */
+  .error-message {
+    color: #f44336;
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  
+  /* Success messages */
+  .success-message {
+    color: #ffe2fa;
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  
+  /* Additional CSS for centering the registration text */
+  .registration-text {
+    text-align: center;
+    margin-top: 20px; /* Adjust the margin as needed */
+  }
